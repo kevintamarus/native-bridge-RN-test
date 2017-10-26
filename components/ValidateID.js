@@ -29,7 +29,7 @@ export default class ValidateID extends Component<{}> {
   }
 
   handleValidationClick() {
-    NativeModules.MyObjcClass.squareMe(9, (error, number) => {
+    NativeModules.MyObjcClass.squareMe(this.state.number, (error, number) => {
       if(error) {
         console.error(error);
       } else {
